@@ -25,7 +25,7 @@ MainWindow::MainWindow(QWidget *parent)
     QHBoxLayout *Hboxlayout = new QHBoxLayout;
 
     // Echiquier
-    QGridLayout *chessboard = new QGridLayout;
+    /*QGridLayout *chessboard = new QGridLayout;
     QLabel **square = new QLabel*[72];
     int widthSquare = 60, lenghtSquare = 60;
     for (int i =0; i<72;i++){
@@ -61,9 +61,9 @@ MainWindow::MainWindow(QWidget *parent)
     //pions blancs
 
 
+    */
 
-
-
+    chessboard Chessboard;
 
     QVBoxLayout *VRightBoxlayout = new QVBoxLayout;
     Hboxlayout->addLayout(VRightBoxlayout);
@@ -79,7 +79,7 @@ MainWindow::MainWindow(QWidget *parent)
     view->setModel(modele);
 
 
-    Hboxlayout->addLayout(chessboard);
+    Hboxlayout->addWidget(&Chessboard);
     Hboxlayout->addWidget(view);
 
 
