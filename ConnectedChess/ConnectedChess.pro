@@ -11,12 +11,16 @@ CONFIG += c++11
 
 SOURCES += \
     chessboard.cpp \
+    fenetreloadfen.cpp \
     main.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    piece.cpp
 
 HEADERS += \
     chessboard.h \
-    mainwindow.h
+    fenetreloadfen.h \
+    mainwindow.h \
+    piece.h
 
 FORMS += \
     mainwindow.ui
